@@ -12,6 +12,11 @@ using namespace std;
 
 Student::Student(){
   first = new char[50];
+  last = new char[50];
+  first[0] = '\0';  // Initialize to empty strings
+  last[0] = '\0';
+  ID = 0;
+  GPA = 0.0;
 }
 
 Student::~Student(){
@@ -20,11 +25,7 @@ Student::~Student(){
 }
 
 void Student::makestudent(char* nfirst, char* nlast, int nID, float NGPA){
-  delete[] first;
-  first = new char[50];
   strcpy(first, nfirst);
-  delete[] last;
-  last = new char[50];
   strcpy(last, nlast);
   ID = nID;
   GPA = NGPA;

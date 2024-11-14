@@ -8,19 +8,19 @@ Node.h
 #define NODE_H
 
 #include <iostream>
-#include "student.h"
+#include "student.h"//this is a parent libary that uses student.h's child libaries
 
 using namespace std;
 
 class Node{
  public:
-  Node(Student* nstudent);
-  ~Node();
-  Student* getstudent();
-  void setNext(Node* newnode);
-  Node* getNext();
+  Node(Student* nstudent);//create a node with a student pointer in it
+  ~Node();//destuctor
+  Student* getstudent();//getting the student
+  void setNext(Node* newnode);//setting the next node
+  Node* getNext();//getting the next node
  private:
-  Student* student;
-  Node* nextnode;
+  Student* student;//student pointer
+  Node* nextnode;//node pointer
 };
 #endif

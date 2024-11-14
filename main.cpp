@@ -13,15 +13,10 @@ using namespace std;
 
 int main(){
   //creating Students
-
-  char Fname1[10];
-  strcpy(Fname1, "Bob");
-  char Fname2[10];
-  strcpy(Fname2, "Fred");
-  char Lname1[10];
-  strcpy(Lname1, "Wright");
-  char Lname2[10];
-  strcpy(Lname2, "Fleet");
+  char Fname1[20] = "Bob";
+  char Fname2[20] = "Fred";
+  char Lname1[20] = "Wright";
+  char Lname2[20] = "Fleet";
 
   Student* student1 = new Student;
   student1->makestudent(Fname1, Lname1, 111111, 4.5);
@@ -36,7 +31,7 @@ int main(){
   Student* getstudent1 = node1->getstudent();
   Student* getstudent2 = node2->getstudent();
 
-  cout << "Out after getting student from node" << endl;
+  cout << "Output after getting student from node" << endl;
   cout << getstudent1->getfirst() << endl;
   cout << getstudent1->getlast() << endl;
   cout << getstudent1->getID() << endl;
@@ -61,11 +56,13 @@ int main(){
   cout << Nnodestudent->getID() << endl;
   cout << Nnodestudent->getGPA() << endl;
 
+  //testing destructors
   delete node2; 
   delete node1;
   delete student1;
   delete student2;
 
-  
+  cout << "Program completed successfully" << endl;
+
   return 0;
 }
