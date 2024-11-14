@@ -4,6 +4,9 @@ C++
 11/13/24
 student.h
 */
+#ifndef STUDENT_H
+#define STUDENT_H
+
 #include <iostream>
 
 using namespace std;
@@ -23,3 +26,5 @@ class Student{
   int ID;
   float GPA;
 };
+
+#endif

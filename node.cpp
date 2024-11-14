@@ -15,7 +15,10 @@ Node::Node(Student* nstudent) {
 }
 
 Node::~Node(){
-  student = NULL;
+  if(student != NULL) {
+    delete student;  // Delete the Student object
+    student = NULL;
+  }
   nextnode = NULL;
 }
 

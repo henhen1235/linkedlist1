@@ -4,12 +4,13 @@ C++
 11/13/24
 Node.h
 */
+#ifndef NODE_H
+#define NODE_H
+
 #include <iostream>
 #include "student.h"
 
 using namespace std;
-
-class Student;
 
 class Node{
  public:
@@ -22,3 +23,4 @@ class Node{
   Student* student;
   Node* nextnode;
 };
+#endif
