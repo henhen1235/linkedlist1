@@ -13,8 +13,6 @@ using namespace std;
 Student::Student(){
   first = new char[50];
   last = new char[50];
-  first[0] = '\0';  // Initialize to empty strings
-  last[0] = '\0';
   ID = 0;
   GPA = 0.0;
 }
