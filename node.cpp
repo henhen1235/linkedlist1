@@ -1,3 +1,9 @@
+/*
+Henry Xu
+C++
+11/13/24
+Node.cpp
+*/
 #include <iostream>
 #include <cstring>
 #include "node.h"
@@ -13,7 +19,7 @@ Node::~Node(){
   nextnode = NULL;
 }
 
-student* Node::getstudent(){
+Student* Node::getstudent(){
   if(student != NULL){
     return student;
   }

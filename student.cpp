@@ -1,4 +1,11 @@
+/*
+Henry Xu
+C++
+11/13/24
+student.cpp
+*/
 #include <iostream>
+#include "student.h"
 
 using namespace std;
 
@@ -6,7 +13,7 @@ Student::Student(){
   first = new char[50];
 }
 
-Student::~student(){
+Student::~Student(){
   delete[] first;
   delete[] last;
 }
@@ -18,7 +25,7 @@ void Student::makestudent(char* nfirst, char* nlast, int nID, float NGPA){
   delete[] last;
   last = new char[50];
   strcpy(last, nlast);
-  Id = nID;
+  ID = nID;
   GPA = NGPA;
 }
 
@@ -28,7 +35,7 @@ char* Student::getfirst(){
 char* Student::getlast(){
   return last;
 }
-int Student::getID()
+int Student::getID(){
   return ID;
 }
 float Student::getGPA(){

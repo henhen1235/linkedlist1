@@ -1,3 +1,9 @@
+/*
+Henry Xu
+C++
+11/13/24
+student.h
+*/
 #include <iostream>
 
 using namespace std;

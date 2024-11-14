@@ -1,6 +1,15 @@
+/*
+Henry Xu
+C++
+11/13/24
+Node.h
+*/
 #include <iostream>
+#include "student.h"
 
 using namespace std;
+
+class Student;
 
 class Node{
  public:
